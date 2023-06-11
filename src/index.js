@@ -1,39 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+// import App from './App' ;
+import reportWebVitals from "./reportWebVitals";
 
-const heading = React.createElement(
-  "h1",
-  {
-      id:"title",
-  },
-  "heading 1"
+const Heading = ()=>(
+	<div>
+		<h1 id="title" key="h1">
+			heading 1
+		</h1>
+	</div>
 );
-const heading2 = React.createElement(
-  "h2",
-  {
-      id:"title",
-  },
-  "heading 2"
+
+const HeaderComponent = () => (
+  <div>
+    <Heading/>
+    <h1>Hello world functional component</h1>
+    <h2>this is h2 tag</h2>
+  </div>
 );
-const heading3 = React.createElement(
-  "h3",
-  {
-      id:"title",
-  },
-  "heading 3"
-);
-const container = React.createElement(
-  "div",
-  {
-  id:"container"
-  },
-  [heading, heading2, heading3]
-);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(<HeaderComponent/>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
