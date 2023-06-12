@@ -26,32 +26,7 @@ const Header = () => (
 	</div>
 );
 
-const config = [
-  {
-    type: "carousel",
-    cards: [
-      {
-        offerName: "50% off"
-      },
-      {
-        offerName: "no delivery charge"
-      }
-    ]
-  },
-  {
-    type: "restaurants",
-    cards: [
-      {
-        offerName: "50% off"
-      },
-      {
-        offerName: "no delivery charge"
-      }
-    ]
-  }
-]
-
-const reataurantList = {
+const KFC = {
   name: "KFC",
   image: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/56c9ab92bd79745fd152a30fa2525426",
   cusines: ["Burgers ", "Biriyani", "American"],
